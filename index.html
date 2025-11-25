@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<title>اندیشه پارسی ایکاد</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif; direction: rtl; text-align: right;}
+.mySlides {display:none}
+.w3-tag, .fa {cursor:pointer}
+.w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+:root{
+    --main-color: #E5AA70;
+    --secondary-color: #228B22;
+}
+</style>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+    <div class="w3-row w3-large w3-light-grey" style="direction: rtl;">
+      <div class="w3-col s3">
+        <a href="#order-btn" class="w3-button w3-block">سفارش</a>
+      </div>
+      <div class="w3-col s3">
+        <a href="#about" class="w3-button w3-block">محصولات</a>
+      </div>
+      <div class="w3-col s3">
+        <a href="#plans" class="w3-button w3-block">تعرفه‌ها</a>
+      </div>
+      <div class="w3-col s3">
+        <a href="#" class="w3-button w3-block">خانه</a>
+      </div>
+    </div>
+  </div>
+
+<!-- Content -->
+<div class="w3-content" style="max-width:100%;margin-top:80px;margin-bottom:60px; margin-left: 80px; margin-right: 80px;">
+
+  <div class="w3-row w3-panel">
+
+    <!-- Left Column (Image) -->
+    <div class="w3-col s4 m3 l2" style="text-align: right;">
+      <img src="images/Andisheh Parsi Ikad the expanded logo.png" style="width: 100%; max-width: 1200px;">
+    </div>
+  
+    <!-- Right Column (Text) -->
+    <div class="w3-col s8 m9 l10" style="text-align: right;">
+      <h1><b>اندیشه پارسی ایکاد</b></h1>
+    </div>
+  
+  </div>
+
+  <!-- Slideshow -->
+  <div class="w3-container" style="max-width: 75%; margin: auto; margin-top: 120px;">
+    <div class="w3-display-container mySlides">
+      <img src="images/Forest_Plaintext.jpg" style="width:100%">
+      <div class="w3-display-bottomright w3-container w3-padding-32">
+        <span class="w3-white w3-padding-large w3-animate-bottom">طراحی‌ها: لوگوها و گرافیک‌های خلاقانه متناسب با برند شما</span>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="images/Forest_Plaintext - Copy.jpg" style="width:100%">
+      <div class="w3-display-bottomright w3-container w3-padding-32">
+        <span class="w3-white w3-padding-large w3-animate-bottom">اپلیکیشن‌ها: برنامه‌های موبایل سفارشی برای رشد کسب‌وکار شما</span>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="images/Forest_Plaintext - Copy (2).jpg" style="width:100%">
+      <div class="w3-display-bottomright w3-container w3-padding-32">
+        <span class="w3-white w3-padding-large w3-animate-bottom">وبسایت‌ها: وبسایت‌های مدرن و واکنش‌گرا برای جذب کاربران</span>
+      </div>
+    </div>
+
+    <!-- Slideshow next/previous buttons -->
+    <div class="w3-container w3-dark-grey w3-padding w3-xlarge">
+      <div class="w3-left" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left w3-hover-text-teal"></i></div>
+      <div class="w3-right" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right w3-hover-text-teal"></i></div>
+    
+      <div class="w3-center">
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Grid -->
+  <div class="w3-row w3-container" style="max-width: 75%; margin: auto;">
+    <div class="w3-center w3-padding-64">
+      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">خدمات ما</span>
+    </div>
+
+    <div class="w3-col l3 m6 w3-light-grey w3-container w3-padding-16" style="width: 33.3%; max-height: 300px;">
+      <h3>طراحی‌ها</h3>
+      <p>ما لوگوها، کارت ویزیت‌ها، بنرها و گرافیک‌هایی ایجاد می‌کنیم که برند شما را حرفه‌ای و به یاد ماندنی جلوه دهد. مناسب برای همه مناسبت‌ها.</p>
+      <button onclick="document.getElementById('order-btn').scrollIntoView({ behavior: 'smooth' }); document.getElementsByName('Subject')[0].value='design';" class="w3-button w3-black w3-block">سفارش</button>
+    </div>
+
+    <div class="w3-col l3 m6 w3-white w3-container w3-padding-16" style="width: 33.3%; max-height: 300px;">
+      <h3>اپلیکیشن‌ها</h3>
+      <p>ما برنامه‌های موبایل و دسکتاپ کاربرپسند می‌سازیم که مشکلات شما را حل کرده و کارهای روزانه مشتریان را ساده‌تر و سریع‌تر می‌کند.</p>
+      <button onclick="document.getElementById('order-btn').scrollIntoView({ behavior: 'smooth' }); document.getElementsByName('Subject')[0].value='application';" class="w3-button w3-light-grey w3-block">سفارش</button>
+    </div>
+
+    <div class="w3-col l3 m6 w3-light-grey w3-container w3-padding-16" style="width: 33.3%; max-height: 300px;">
+      <h3>وبسایت‌ها</h3>
+      <p>تیم ما وبسایت‌های واکنش‌گرا و بهینه‌سازی شده برای موتورهای جستجو طراحی می‌کند که خدمات شما را به بهترین شکل نمایش دهند.</p>
+      <button onclick="document.getElementById('order-btn').scrollIntoView({ behavior: 'smooth' }); document.getElementsByName('Subject')[0].value='website';" class="w3-button w3-black w3-block">سفارش</button>
+    </div>
+  </div>
+
+  <!-- Grid -->
+  <div class="w3-row-padding" id="plans" style="max-width: 75%; margin: auto;">
+    <div class="w3-padding-64" style="text-align: center;">
+        <h3 style="text-align: center !important;">پلن‌های تعرفه</h3>
+        <p style="text-align: center;">یک پلن تعرفه‌ای که نیاز شما را برآورده می‌کند انتخاب کنید.</p>
+      </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+        <li class="w3-green w3-xlarge w3-padding-32">پایه</li>
+        <li class="w3-padding-16"><b>10GB</b> فضای ذخیره‌سازی</li>
+        <li class="w3-padding-16"><b>10</b> ایمیل</li>
+        <li class="w3-padding-16"><b>10</b> دامنه</li>
+        <li class="w3-padding-16"><b>پشتیبانی نامحدود</b></li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 10</h2>
+          <span class="w3-opacity">به ازای ماه</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-green w3-padding-large" style="background: #E5AA70 !important; color: white;">ثبت‌نام</button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+        <li class="w3-dark-grey w3-xlarge w3-padding-32">حرفه‌ای</li>
+        <li class="w3-padding-16"><b>25GB</b> فضای ذخیره‌سازی</li>
+        <li class="w3-padding-16"><b>25</b> ایمیل</li>
+        <li class="w3-padding-16"><b>25</b> دامنه</li>
+        <li class="w3-padding-16"><b>پشتیبانی نامحدود</b></li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 25</h2>
+          <span class="w3-opacity">به ازای ماه</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-green w3-padding-large">ثبت‌نام</button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">پرمیوم</li>
+        <li class="w3-padding-16"><b>50GB</b> فضای ذخیره‌سازی</li>
+        <li class="w3-padding-16"><b>50</b> ایمیل</li>
+        <li class="w3-padding-16"><b>50</b> دامنه</li>
+        <li class="w3-padding-16"><b>پشتیبانی نامحدود</b></li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 50</h2>
+          <span class="w3-opacity">به ازای ماه</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-green w3-padding-large">ثبت‌نام</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Grid -->
+  <div class="w3-row-padding" id="about" style="max-width: 75%; margin: auto;">
+    <div class="w3-center w3-padding-64">
+      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">پروژه‌های ما</span>
+    </div>
+
+    <div class="w3-col s12 w3-margin-bottom">
+      <div class="w3-card-4 w3-row" style="display:flex; align-items:center;">
+  
+        <!-- Left Text Column -->
+        <div class="w3-col s7" style="padding: 16px; text-align:right;">
+          <h3>هم‌قافیه</h3>
+          <p class="w3-opacity">اپلیکیشن</p>
+          <p>یک برنامه برای شاعران جهت یافتن آسان واژه‌های قافیه. سریع و راحت.</p>
+          
+          <div style="text-align:left; margin-top:8px; margin-left: 25px;">
+              <button class="w3-button w3-light-grey" style="padding:6px 28px; font-size:15px;">مشاهده</button>
+          </div>
+
+        </div>
+    
+        <!-- Right Image Column -->
+        <div class="w3-col s5" style="text-align:center;">
+          <img src="images/cat (1).png" style="width:100%; max-width: 500px;">
+        </div>
+    
+      </div>
+    </div>
+    
+
+    <div class="w3-col s12 w3-margin-bottom">
+      <div class="w3-card-4 w3-row" style="display:flex; align-items:center;">
+  
+        <!-- Left Text Column -->
+        <div class="w3-col s7" style="padding: 16px; text-align:right;">
+          <h3>اپلیکیشن کارت رفاهی ایرانخودرو</h3>
+          <p class="w3-opacity">اپلیکیشن</p>
+          <p>برنامه‌ای برای کارکنان کارخانه ایرانخودرو.</p>
+
+          <div style="text-align:left; margin-top:8px; margin-left: 25px;">
+              <button class="w3-button w3-light-grey" style="padding:6px 28px; font-size:15px;">مشاهده</button>
+          </div>
+
+        </div>
+    
+        <!-- Right Image Column -->
+        <div class="w3-col s5" style="text-align:center;">
+          <img src="images/cat (3).png" style="width:100%; max-width:500px;">
+        </div>
+    
+      </div>
+    </div>
+
+  <!-- Contact -->
+  <div class="w3-center w3-padding-64" id="contact">
+    <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">تماس با ما</span>
+  </div>
+
+  <form class="w3-container" action="/action_page.php" target="_blank" style="width: 75%; margin: auto;">
+    <div class="w3-section">
+      <label id="name-txtfld">نام و نام خانوادگی</label>
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="Name" required>
+    </div>
+    <div class="w3-section">
+      <label id="contact-txtfld">ایمیل یا شماره تماس</label>
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="Email" required>
+    </div>
+    <div class="w3-section" id="subject-dropdown">
+        <label>موضوع</label>
+        <select class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="Subject" required>
+          <option value="" disabled selected>یک موضوع انتخاب کنید</option>
+          <option value="design">طراحی</option>
+          <option value="application">اپلیکیشن</option>
+          <option value="website">وبسایت</option>
+          <option value="others">سایر</option>
+        </select>
+      </div>
+    <div class="w3-section">
+      <label id="Message-txtfld">توضیحات</label>
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="Message" required>
+    </div>
+    <button type="submit" class="w3-button w3-block w3-black" id="order-btn">ارسال</button>
+  </form>
+
+</div>
+
+<!-- footer -->
+<footer style="width: 100%; background-color: #f1f1f1; text-align:right; padding:16px; margin-top: 50px;" id="footer">
+  <h4 style="text-align:center;">ارتباط بیشتر با ما</h4>
+
+  <!-- To the top button -->
+  <div style="text-align:center; margin-bottom: 20px;">
+    <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-left"></i>بازگشت به بالا</a>
+  </div>
+
+  <!-- Social media links (rows clickable) -->
+  <div style="max-width: 400px; margin: auto;">
+
+    <a href="https://instagram.com/yourprofile" target="_blank" style="display:flex; justify-content: space-between; align-items:center; text-decoration:none; color:inherit; padding: 8px 0; border-bottom:1px solid #ddd;">
+      <span>https://instagram.com/yourprofile</span>
+      <i class="fa fa-instagram w3-xlarge w3-hover-opacity"></i>
+    </a>
+
+    <a href="https://linkedin.com/in/yourprofile" target="_blank" style="display:flex; justify-content: space-between; align-items:center; text-decoration:none; color:inherit; padding: 8px 0; border-bottom:1px solid #ddd;">
+      <span>https://linkedin.com/in/yourprofile</span>
+      <i class="fa fa-linkedin w3-xlarge w3-hover-opacity"></i>
+    </a>
+  </div>
+
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 7991);    
+}
+
+// Slideshow
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demodots");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+</body>
+</html>
