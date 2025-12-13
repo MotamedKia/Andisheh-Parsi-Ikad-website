@@ -149,6 +149,12 @@
     box-shadow: 0 0 6px rgba(212, 89, 21, 0.35);
 }
 
+.textboxinslideshow{
+  background: var(--secondary-color);
+  color: white;
+  background-size: 50px;
+}
+
 .gold-gradient {
   background: linear-gradient(135deg,
     #fff4c4,
@@ -237,25 +243,32 @@
   <!-- Slideshow -->
   <div class="w3-container" style="max-width: 75%; margin: auto; margin-top: 120px;">
     <div class="w3-display-container mySlides">
-      <img src="images/Forest_Plaintext.jpg" style="width:100%">
+      <img src="images/Banner_Design_Logo_1.jpg" style="width:100%">
       <div class="w3-display-bottomright w3-container w3-padding-32">
         <span class="w3-white w3-padding-large w3-animate-bottom">طراحی‌ها: لوگوها و گرافیک‌های خلاقانه متناسب با برند شما</span>
       </div>
     </div>
     <div class="w3-display-container mySlides">
-      <img src="images/Forest_Plaintext - Copy.jpg" style="width:100%">
+      <img src="images/Banner_app_1.jpg" style="width:100%">
       <div class="w3-display-bottomright w3-container w3-padding-32">
         <span class="w3-white w3-padding-large w3-animate-bottom">اپلیکیشن‌ها: برنامه‌های موبایل سفارشی برای رشد کسب‌وکار شما</span>
+        <!-- <P class="textboxinslideshow">اپلیکیشن‌ها: برنامه‌های موبایل سفارشی برای رشد کسب‌وکار شما</P> -->
       </div>
     </div>
     <div class="w3-display-container mySlides">
-      <img src="images/Forest_Plaintext - Copy (2).jpg" style="width:100%">
+      <img src="images/Banner_web_1.jpg" style="width:100%">
       <div class="w3-display-bottomright w3-container w3-padding-32">
         <span class="w3-white w3-padding-large w3-animate-bottom">وبسایت‌ها: وبسایت‌های مدرن و واکنش‌گرا برای جذب کاربران</span>
       </div>
     </div>
+    <div class="w3-display-container mySlides">
+      <img src="images/Banner_app_2.jpg" style="width:100%">
+      <div class="w3-display-bottomright w3-container w3-padding-32">
+        <span class="w3-white w3-padding-large w3-animate-bottom">اپلیکیشن‌ها: برنامه‌های موبایل سفارشی برای رشد کسب‌وکار شما</span>
+      </div>
+    </div>
 
-    <!-- Slideshow next/previous buttons -->
+    <!-- Slideshow next/previous buttons
     <div class="w3-container w3-padding w3-xlarge">
       <div class="w3-left" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left w3-hover-text-teal"></i></div>
       <div class="w3-right" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right w3-hover-text-teal"></i></div>
@@ -265,7 +278,7 @@
         <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
         <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
       </div>
-    </div>
+    </div> -->
   </div>
   
   <!-- Grid -->
@@ -311,13 +324,13 @@
         <li class="w3-padding-16"><b></b>طراحی و یا بازطراحی لوگو</li>
         <li class="w3-padding-16"><b></b>ارسال <b>سه</b> نمونه طرح</li>
         <li class="w3-padding-16"><b></b>تا چهار مرتبه اصلاح رایگان</li>
-        <li class="w3-padding-16"><b>تحویل <b>۷</b> روز کاری</b></li>
+        <li class="w3-padding-16"><b>تحویل ۷ روز کاری</b></li>
         <li class="w3-padding-16">
           <h2 class="w3-wide">$ 10</h2>
           <span class="w3-opacity">به ازای ماه</span>
         </li>
         <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-green w3-padding-large">ثبت‌نام</button>
+          <button class="w3-button w3-green w3-padding-large" onclick="secondpageenter('gold')">ثبت‌نام</button>
         </li>
       </ul>
     </div>
@@ -332,13 +345,13 @@
         <li class="w3-padding-16"><b></b>طراحی و یا بازطراحی لوگو</li>
         <li class="w3-padding-16"><b></b>ارسال <b>دو</b> نمونه طرح</li>
         <li class="w3-padding-16"><b></b>تا <b>سه</b> مرتبه اصلاح رایگان</li>
-        <li class="w3-padding-16"><b>تحویل <b>۷</b> روز کاری</b></li>
+        <li class="w3-padding-16"><b>تحویل ۷ روز کاری</b></li>
         <li class="w3-padding-16">
           <h2 class="w3-wide">$ 25</h2>
           <span class="w3-opacity">به ازای ماه</span>
         </li>
         <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-green w3-padding-large">ثبت‌نام</button>
+          <button class="w3-button w3-green w3-padding-large" onclick="secondpageenter('silver')">ثبت‌نام</button>
         </li>
       </ul>
     </div>
@@ -356,7 +369,7 @@
           <span class="w3-opacity">به ازای ماه</span>
         </li>
         <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-green w3-padding-large">ثبت‌نام</button>
+          <button class="w3-button w3-green w3-padding-large" onclick="secondpageenter('bronze')">ثبت‌نام</button>
         </li>
       </ul>
     </div>
@@ -375,7 +388,12 @@
         <div class="w3-col s7" style="padding: 16px; text-align:right;">
           <h3>هم‌قافیه</h3>
           <p class="w3-opacity">اپلیکیشن</p>
-          <p>یک برنامه برای شاعران جهت یافتن آسان واژه‌های قافیه. سریع و راحت.</p>
+          <p>
+            <b>برنامه‌ای ویژه برای شاعران، به‌منظور یافتن آسان و سریع واژه‌های دارای قافیه</b><br>
+            دارای مجموعه‌ای کامل از لغات روزمره و ادبی، برگرفته از منابعی همچون
+            لغتنامه‌ی دهخدا.<br>این اپلیکیشن مجهز به سیستم جست‌وجو و بخش ذخیره‌سازی
+            ساده و کاربردی است <br>و از قابلیت دارک‌مود نیز پشتیبانی می‌کند.<br>
+          </p>          
           
           <div style="text-align:left; margin-top:8px; margin-left: 25px;">
               <button class="w3-button w3-light-grey" style="padding:6px 28px; font-size:15px;">مشاهده</button>
@@ -400,7 +418,12 @@
         <div class="w3-col s7" style="padding: 16px; text-align:right;">
           <h3>اپلیکیشن کارت رفاهی ایرانخودرو</h3>
           <p class="w3-opacity">اپلیکیشن</p>
-          <p>برنامه‌ای برای کارکنان کارخانه ایرانخودرو.</p>
+          <p>
+            <b>برنامه‌ای ویژه برای کارکنان شرکت ایران‌خودرو</b><br>
+            مجموعه‌ای از مراکز تفریحی، فروشگاهی و خدماتی که
+            با شرکت ایران‌خودرو قرارداد همکاری دارند <br>و کارکنان می‌توانند
+            از خدمات و امکانات این مراکز بهره‌مند شوند.
+          </p>          
 
           <div style="text-align:left; margin-top:8px; margin-left: 25px;">
               <button class="w3-button w3-light-grey" style="padding:6px 28px; font-size:15px;">مشاهده</button>
@@ -410,7 +433,7 @@
     
         <!-- Right Image Column -->
         <div class="w3-col s5" style="text-align:center;">
-          <img src="images/cat (3).png" style="width:100%; max-width:500px;">
+          <img src="images/Refahi ICKO Light Mode.jpg" style="width:100%; max-width:500px;">
         </div>
     
       </div>
@@ -418,21 +441,21 @@
 
   <!-- Contact -->
   <div class="w3-center w3-padding-64" id="contact">
-    <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">سفارش محصولات</span>
+    <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">درخواست سفارش</span>
   </div>
 
   <form class="w3-container" action="/action_page.php" target="_blank" style="width: 75%; margin: auto;">
     <div class="w3-section">
       <label id="name-txtfld">نام و نام خانوادگی</label>
-      <input class="w3-input w3-border w3-hover-border-black textfield" style="width:100%;" type="text" name="Name" required>
+      <input id="namArea" class="w3-input w3-border w3-hover-border-black textfield" style="width:100%;" type="text" name="Name" required>
     </div>
     <div class="w3-section">
       <label id="contact-txtfld">ایمیل یا شماره تماس</label>
-      <input class="w3-input w3-border w3-hover-border-black textfield" style="width:100%;" type="text" name="Email" required>
+      <input id="shomarehAre" class="w3-input w3-border w3-hover-border-black textfield" style="width:100%;" type="text" name="Email" required>
     </div>
     <div class="w3-section" id="subject-dropdown">
         <label>موضوع</label>
-        <select class="w3-input w3-border w3-hover-border-black textfield" style="width:100%;" name="Subject" required>
+        <select id="mozoArea" class="w3-input w3-border w3-hover-border-black textfield" style="width:100%;" name="Subject" required>
           <option value="" disabled selected>یک موضوع انتخاب کنید</option>
           <option value="design">طراحی</option>
           <option value="application">اپلیکیشن</option>
@@ -442,9 +465,9 @@
       </div>
     <div class="w3-section">
       <label id="Message-txtfld">توضیحات</label>
-      <textarea class="w3-input w3-border w3-hover-border-black textfield" style="width:100%; height:200px;" name="Message" required></textarea>
+      <textarea id="tozihArea" class="w3-input w3-border w3-hover-border-black textfield" style="width:100%; height:200px;" name="Message" required></textarea>
     </div>
-    <button type="submit" class="w3-button w3-block w3-black" id="order-btn">ارسال</button>
+    <button type="button" class="w3-button w3-block w3-black" id="order-btn" onclick="message()">ارسال</button>
   </form>
 
 </div>
@@ -462,12 +485,12 @@
   <div style="max-width: 400px; margin: auto;">
 
     <a href="https://instagram.com/yourprofile" target="_blank" style="display:flex; justify-content: space-between; align-items:center; text-decoration:none; color:inherit; padding: 8px 0; border-bottom:1px solid #ddd;">
-      <span>https://instagram.com/yourprofile</span>
+      <span>Andisheh_Parsi_Ikad@</span>
       <i class="fa fa-instagram w3-xlarge w3-hover-opacity"></i>
     </a>
 
     <a href="https://linkedin.com/in/yourprofile" target="_blank" style="display:flex; justify-content: space-between; align-items:center; text-decoration:none; color:inherit; padding: 8px 0; border-bottom:1px solid #ddd;">
-      <span>https://linkedin.com/in/yourprofile</span>
+      <span>ANDISHEHPARSIIKAD@</span>
       <i class="fa fa-linkedin w3-xlarge w3-hover-opacity"></i>
     </a>
   </div>
@@ -529,6 +552,22 @@ function showDivs(n) {
   }
   x[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " w3-white";
+}
+function secondpageenter(plan){
+  window.location.href="pages/page2.html?plan="+plan;
+}
+
+function message(){
+  const tozih =document.getElementById("tozihArea").value.trim();
+  const mozo =document.getElementById("mozoArea").value.trim();
+  const shomareh =document.getElementById("shomarehAre").value.trim();
+  const nam =document.getElementById("namArea").value.trim();
+  
+  if(tozih!="" && mozo!="" && shomareh!="" && nam!=""){
+    alert("پیام درخواست شما ارسال شد.\nدر اسرع وقت با شما تماسی گرفته خواهد شد.")
+  } else{
+    alert("لطفا همه موارد خواسته شده را کامل کنید.")
+  }
 }
 </script>
 

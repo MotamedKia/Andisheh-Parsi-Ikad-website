@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gradient Card Page</title>
+
+<style>
+    /* Page Gradient Background */
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Segoe UI", sans-serif;
+
+        /* Smooth Gold Gradient */
+        /* background: linear-gradient(135deg, #cef8ff, #66dff5, #1f66a0);
+        background-size: 200% 200%;
+        animation: gradientMove 8s ease infinite; */
+    }
+
+    @keyframes gradientMove {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+
+    /* Gradient classes */
+    .theme-gold {
+      background: linear-gradient(135deg,#fff4c4, #f1c05b, #d4a037);
+      background-size: 200% 200%;
+      animation: gradientMove 8s ease infinite;
+    }
+
+    .theme-silver {
+      background: linear-gradient(135deg, #f8f8f8, #dcdcdc, #b5b5b5);
+      background-size: 200% 200%;
+      animation: gradientMove 8s ease infinite;
+    }
+
+    .theme-bronze {
+      background: linear-gradient(135deg,#f3e1c7, #c98947, #8a5a2e);
+      background-size: 200% 200%;
+      animation: gradientMove 8s ease infinite;
+    }
+
+
+    /* Card Styling */
+    .card {
+        width: 350px;
+        padding: 24px;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(12px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        color: #333;
+        text-align: center;
+
+        transform: translateY(-300px);
+        transition: transform 0.4s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-290px);
+    }
+
+    .card h1 {
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+
+    .card p {
+        margin-bottom: 20px;
+        line-height: 1.6;
+    }
+
+    .goldbtn{
+    padding: 12px 24px;
+        font-size: 16px;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: 0.3s;
+
+        background: #ffffff;
+        color: #d4a037;
+        font-weight: bold;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .goldbtn:hover{
+      background: #f3d599;
+      color: #ffffff;
+      transform: scale(1.05);
+    }
+
+    .silverbtn{
+    padding: 12px 24px;
+        font-size: 16px;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: 0.3s;
+
+        background: #ffffff;
+        font-weight: bold;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .silverbtn:hover{
+      background: #a0a0a0;
+      color: #ffffff;
+      transform: scale(1.05);
+    }
+
+    .bronzebtn{
+    padding: 12px 24px;
+        font-size: 16px;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: 0.3s;
+
+        background: #ffffff;
+        color: #c98947;
+        font-weight: bold;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .bronzebtn:hover{
+      background: #b88f66;
+      color: #ffffff;
+      transform: scale(1.05);
+    }
+    
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    <h1 id="title">بسته‌</h1>
+    <p id="description">
+        TODO: Don't forget to put <b>description</b> in here!
+    </p>
+    <button id="button" onclick="message(plan)">ثبت سفارش</button>
+</div>
+
+
+
+<script>
+  // Read URL parameters
+  const params = new URLSearchParams(window.location.search);
+  const plan = params.get("plan");
+
+  // Pick the element we want to change
+  const textElement = document.getElementById("description");
+  const headElement = document.getElementById("title");
+  const btnElement = document.getElementById("button")
+  // const backElement = document.getElementById("description");
+
+  // Change text and background according to the theme
+  if (plan === "gold") {
+    // textElement.textContent = "سربرگ یادداشت </b>A4<b> و </b>A5<b><br> پاکت‌نامه </b>A4<b> و </b>A5<b><br> کارت ویزیت<br> پاکت سی‌دی<br> تقویم دیواری<br> طراحی و یا بازطراحی لوگو<br> ارسال <b>سه</b> نمونه طرح<br>تا <b>چهار</b> مرتبه اصلاح رایگان<br> <b>تحویل ۷ روز کاری</b> ";
+    textElement.innerHTML='something'
+    headElement.textContent = "بسته طلایی";
+    btnElement.classList.add("goldbtn");
+
+    document.body.classList.add("theme-gold");
+  } 
+  else if (plan === "silver") {
+    textElement.textContent = "SILVER";
+    headElement.textContent = "بسته نقره‌ای";
+    btnElement.classList.add("silverbtn");
+
+    document.body.classList.add("theme-silver");
+  } 
+  else if (plan === "bronze") {
+    textElement.textContent = "BRONZE";
+    headElement.textContent = "بسته برنزی";
+    btnElement.classList.add("bronzebtn");
+
+    document.body.classList.add("theme-bronze");
+  } 
+  else {
+    textElement.textContent = "No theme selected.";
+  }
+
+    function message(plan2nd) {
+        alert("Button of "+plan2nd+" clicked!");
+    }
+</script>
+
+</body>
+</html>
