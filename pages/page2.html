@@ -59,12 +59,13 @@
         color: #333;
         text-align: center;
 
-        transform: translateY(-300px);
+        transform: translateY(-200px);
         transition: transform 0.4s ease;
+        margin: 30px;
     }
 
     .card:hover {
-        transform: translateY(-290px);
+        transform: translateY(-190px);
     }
 
     .card h1 {
@@ -132,6 +133,16 @@
       color: #ffffff;
       transform: scale(1.05);
     }
+
+    .slide { display: none; text-align: center; }
+.caption {
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  padding: 8px;
+  border-radius: 8px;
+  margin-top: -40px; /* overlay effect */
+  display: inline-block;
+}
     
 </style>
 </head>
@@ -147,6 +158,38 @@
 </div>
 
 
+<div class="w3-content w3-section" style="max-width:500px">
+  <div class="slide" data-plan="gold,silver">
+    <img src="images/img-logo.png" style="width:100%">
+    <p class="caption">طراحی و بازطراحی لوگو</p>
+  </div>
+  
+  <div class="slide" data-plan="gold,silver,bronze">
+    <img src="images/img-cart.jpg" style="width:100%">
+    <p class="caption">کارت ویزیت</p>
+  </div>
+  
+  <div class="slide" data-plan="gold,silver,bronze">
+    <img src="images/img-sarbarg.png" style="width:100%">
+    <p class="caption">سربرگ یادداشت</p>
+  </div>
+  
+  <div class="slide" data-plan="gold">
+    <img src="images/img-cd.jpg" style="width:100%">
+    <p class="caption">پاکت سی‌دی</p>
+  </div>
+  
+  <div class="slide" data-plan="gold,silver">
+    <img src="images/img-pakat.png" style="width:100%">
+    <p class="caption">پاکت‌نامه</p>
+  </div>
+  
+  <div class="slide" data-plan="gold,silver">
+    <img src="images/img-taghvim.png" style="width:100%">
+    <p class="caption">تقویم دیواری</p>
+  </div>
+</div>
+
 
 <script>
   // Read URL parameters
@@ -161,22 +204,37 @@
 
   // Change text and background according to the theme
   if (plan === "gold") {
-    // textElement.textContent = "سربرگ یادداشت </b>A4<b> و </b>A5<b><br> پاکت‌نامه </b>A4<b> و </b>A5<b><br> کارت ویزیت<br> پاکت سی‌دی<br> تقویم دیواری<br> طراحی و یا بازطراحی لوگو<br> ارسال <b>سه</b> نمونه طرح<br>تا <b>چهار</b> مرتبه اصلاح رایگان<br> <b>تحویل ۷ روز کاری</b> ";
-    textElement.innerHTML='something'
+    textElement.innerHTML = `
+    <b>تکمیل‌ترین</b> ست اداری<br>
+    که شامل آیتم‌های زیر می‌شود<br>
+    و به کسب و کار شما <b>روح</b><br>
+    و <b>زندگی</b> می‌بخشد
+  `;
     headElement.textContent = "بسته طلایی";
     btnElement.classList.add("goldbtn");
 
     document.body.classList.add("theme-gold");
   } 
   else if (plan === "silver") {
-    textElement.textContent = "SILVER";
+    textElement.innerHTML = `
+    یک <b>ست اداری متعادل</b><br>
+    با آیتم‌های ضروری و کاربردی<br>
+    که به برند شما <b>اعتبار</b><br>
+    و <b>حضور حرفه‌ای</b> می‌بخشد
+`;
     headElement.textContent = "بسته نقره‌ای";
     btnElement.classList.add("silverbtn");
 
     document.body.classList.add("theme-silver");
   } 
   else if (plan === "bronze") {
-    textElement.textContent = "BRONZE";
+    textElement.innerHTML = `
+    <b>گزینه‌ای اقتصادی</b><br>
+    برای شروع و معرفی کسب‌وکار<br>
+    شامل آیتم‌های پایه‌ای<br>
+    که به شما <b>هویت</b><br>
+    و <b>شناخت اولیه</b> می‌دهد
+`; 
     headElement.textContent = "بسته برنزی";
     btnElement.classList.add("bronzebtn");
 
@@ -186,9 +244,35 @@
     textElement.textContent = "No theme selected.";
   }
 
-    function message(plan2nd) {
-        alert("Button of "+plan2nd+" clicked!");
-    }
+// Show only slides allowed for this plan
+const slides = document.querySelectorAll(".slide");
+slides.forEach(slide => {
+  const allowedPlans = slide.dataset.plan.split(",");
+  if (!allowedPlans.includes(plan)) {
+    slide.remove(); // remove slides not allowed
+  }
+});
+
+// Carousel
+let myIndexCar = 0;
+function carousel() {
+  const visibleSlides = document.getElementsByClassName("slide");
+  for (let i = 0; i < visibleSlides.length; i++) {
+    visibleSlides[i].style.display = "none";
+  }
+  myIndexCar++;
+  if (myIndexCar > visibleSlides.length) { myIndexCar = 1 }
+  if (visibleSlides.length > 0) {
+    visibleSlides[myIndexCar-1].style.display = "block";
+  }
+  setTimeout(carousel, 2500);
+}
+carousel();
+
+function message(plan2nd) {
+  alert("Button of " + plan2nd + " clicked!");
+}
+
 </script>
 
 </body>
